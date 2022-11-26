@@ -7,3 +7,11 @@ builds:
       - linux
       - darwin
       - windows
+archives:
+  - id: Group-Pairs
+    format: binary
+    replacements:
+      windows: Windows
+      darwin: MacOs
+      linux: Linux
+      386: i386
