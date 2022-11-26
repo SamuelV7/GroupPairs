@@ -70,6 +70,7 @@ func pretiffyList(list [][]string) {
 }
 
 func main() {
+
 	fmt.Println("Hey Prayer Partner List Maker")
 	fmt.Println("------------------------------")
 	peopleList := []string{"Stephan", "Rasheed", "Aisha", "Yordi",
