@@ -1,0 +1,9 @@
+# .goreleaser.yaml
+builds:
+  - main: main.go
+    id: "cli"
+    binary: groups
+    goos:
+      - linux
+      - darwin
+      - windows
