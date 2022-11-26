@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"strings"
 	"time"
 )
 
@@ -71,6 +72,18 @@ func pretiffyList(list [][]string) {
 
 func main() {
 	fmt.Println("Hey Prayer Partner List Maker")
+	for true {
+		generate()
+		var userString string
+		fmt.Println("\nWant to generate another List? Press Y/N")
+		fmt.Scanln(&userString)
+		if strings.ToLower(userString) != "y" {
+			break
+		}
+	}
+}
+
+func generate() {
 	fmt.Println("------------------------------")
 	peopleList := []string{"Stephan", "Rasheed", "Aisha", "Yordi",
 		"Kelly", "Cailin", "Landi", "Tina", "Sophia", "Anita", "Gaberial",
