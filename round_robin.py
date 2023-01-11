@@ -45,7 +45,7 @@ def deprecated_create_pairs(the_arr):
     for i in range(len(make_even(the_arr))-1):
         print(f"Week {i+1}")
         rotated = rotate_partners(rotated.tolist())
-        pretty_print(rotated)
+        print_pairs_from_2d_arr(rotated, i)
         print("")
 
 def create_pairs(the_arr):
